@@ -2,7 +2,7 @@ import '../sass/style.sass';
 import './resources/adobe-font';
 import React from "react";
 import ReactDOM from 'react-dom'
-import Top from './pages/top'
+import Main from './pages/main.jsx'
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -11,7 +11,7 @@ class App extends React.Component{
         return (
             <Router>
                 <Switch>
-                    <Route path="/" exact component={Top} />
+                    <Route path="/" exact component={Main} />
                 </Switch>
             </Router>
         )

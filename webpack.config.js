@@ -8,7 +8,7 @@ module.exports = {
   watchOptions: {
     ignored: /node_modules/
   },
-  entry: './src/scripts/index.js',
+  entry: './src/scripts/index.jsx',
   output: {
     path: outputPath,
     publicPath: "/",
