@@ -1,4 +1,5 @@
 import '../sass/style.sass';
+import './resources/adobe-font';
 import React from "react";
 import ReactDOM from 'react-dom'
 import Top from './pages/top'
