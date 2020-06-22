@@ -1,13 +1,63 @@
+@keyframes key__slide-show__bar
+  0%
+    width: 0%
+  100%
+    width: 100%
+
+@keyframes key__slide-show__toggle-button--enter
+  0%
+    background-color: $color__slide-show__toggle-button
+  100%
+    background-color: $base-white
+    
+@keyframes key__slide-show__toggle-button--exit
+  0%
+    background-color: $base-white
+  100%
+    background-color: $color__slide-show__toggle-button
+
+@keyframes key__slide-show__toggle-button-after--exit
+  50%
+    transform: translateX(0px)
+    width: 40px
+  100%
+    transform: translateX(30px)
+    width: 10px
+
 .slide-show
-  &__image--
-    &first
+  &__image
+    &--first
       animation: fadein 0.5s both
-    &enter
+    &--enter
       opacity: 0
-    &enter-done
+    &--enter-done
       animation: fadein 0.5s both
 
-    &exit
+    &--exit
       opacity: 1
-    &exit-done
+    &--exit-done
       animation: fadeout 0.5s both
+
+  &__bar
+    animation: key__slide-show__bar 5s linear both
+    
+  &__toggle-button
+    &--first
+      animation: key__slide-show__toggle-button--enter 0.5s both
+    &--enter-done
+      animation: key__slide-show__toggle-button--enter 0.5s both
+    &--exit-done
+      animation: key__slide-show__toggle-button--exit 0.5s both
+      &::after
+        content: ""
+        display: block
+        pointer-events: none
+        height: 10px
+        width: 10px
+        border-radius: 5px
+        background-color: $base-white
+        animation: key__slide-show__toggle-button-after--exit 0.5s both,
+        fadeout linear 0s 0.5s both
+
+    &-last--exit-done
+      animation: key__slide-show__toggle-button--exit 0.5s both
