@@ -62,7 +62,7 @@ function SlideShow() {
 
     
     return (
-        <div className="slide-show">
+        <div className="slide-show" name="slide-show">
             {imgTags}
             <div key={imageCount} className="slide-show__bar" />
             <div className="slide-show__toggle-button-wrapper">
