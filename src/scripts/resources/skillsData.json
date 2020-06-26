@@ -1,0 +1,31 @@
+{
+    "maxValue": 100,
+    "skillGroups" : [
+        {
+            "tag": "Web",
+            "skills": [
+                {
+                    "name": "React",
+                    "value": 10
+                },
+                {
+                    "name": "CSS",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "tag": "Game",
+            "skills": [
+                {
+                    "name": "Unity",
+                    "value": 50
+                },
+                {
+                    "name": "Dxlib",
+                    "value": 30
+                }
+            ]
+        }
+    ]
+}
