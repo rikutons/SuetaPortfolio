@@ -1,7 +1,6 @@
 import React from 'react'
 import Work from './work'
 import { Controller, Scene } from 'react-scrollmagic';
-import Appup from '../../app';
 
 const App = () => (
   <div>
