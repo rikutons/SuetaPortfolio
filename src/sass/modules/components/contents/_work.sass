@@ -1,0 +1,31 @@
+.work
+  transition: all 0.5s
+  transform-origin: 200px
+  transform: scale(0.2) translateY(500px) 
+  opacity: 0
+  &__active
+    opacity: 1
+    transform: translateY(0px) scale(1)
+  &__image
+    display: block
+    margin: 20px
+    width: 400px
+    border: 5px solid $accent-blue
+  &__discription-wrapper
+    display: flex
+    align-items: center
+  &__title
+    margin: 20px
+  &__gihub-icon
+    width: 60px
+
+  &:nth-child(even)
+    transform-origin: 800px
+    .work__image
+      margin-left: auto
+    .work__discription-wrapper
+      flex-flow: row-reverse
+    .work__title
+      text-align: right
+
+    
