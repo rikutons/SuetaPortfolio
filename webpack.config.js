@@ -43,7 +43,10 @@ module.exports = {
       }]
     }]
   },
-  
+  resolve: {
+    // ここに登録した拡張子は import時に省略できる
+    extensions: ['*', '.js', '.jsx']
+  },
   devServer: {
     contentBase: outputPath,
     historyApiFallback: true,

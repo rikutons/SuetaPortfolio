@@ -1,6 +1,6 @@
 import React from 'react'
-import SNSBar from './sns-bar.jsx'
-import Skills from './skills.jsx'
+import SNSBar from './sns-bar'
+import Skills from './skills'
 
 function About() {
     return (

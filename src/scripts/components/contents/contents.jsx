@@ -1,7 +1,7 @@
 import React from 'react'
-import About from './about.jsx'
-import Works from './works.jsx'
-import Contact from './contact.jsx'
+import About from './about'
+import Works from './works'
+import Contact from './contact'
 
 function Contents() {
     return (
