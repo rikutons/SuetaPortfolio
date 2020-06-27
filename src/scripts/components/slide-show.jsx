@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group';
+import images from "../resources/productImages.json";
 
 function SlideShow() {
     const [imageCount, setImageCount] = useState(0)
-    const imagePath = "images/products/"
-    const images = [
-        "danmaku-renkeitan.png",
-        "intro-of-masuda.png",
-        "motion-graphics.png",
-        "sukue-salary-man.png",
-        "wander-tempo.png"
-    ]
 
     function changeImange() {
         var nextCount = (imageCount + 1) % images.length
@@ -32,7 +25,7 @@ function SlideShow() {
             imageClassNames += " slide-show__image--first"
         imgTags.push(
             <CSSTransition in={imageCount == index} timeout={0} key={index} classNames="slide-show__image-">
-                <img className={imageClassNames} src={imagePath + image}/>
+                <img className={imageClassNames} src={image}/>
             </CSSTransition>
         )
 
