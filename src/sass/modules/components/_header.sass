@@ -1,15 +1,39 @@
 .header
-  position: fixed
-  display: flex
-  width: 100%
-  z-index: 9999
-  background: linear-gradient(to bottom, #fffffe, transparent)
-  height: 100px
+  &__wrapper
+    position: fixed
+    display: flex
+    width: 100%
+    z-index: 9999
+    background: linear-gradient(to bottom, #fffffe, transparent)
+    height: 100px
   &__text
+    position: relative
     font-size: 35px
-    margin: 10px 20px 
+    height: 50px
+    color: $main-black
+    padding: 5px 5px 
+    margin: 5px 15px 
     font-family: buena-park-jf, serif
     cursor: pointer
-    &--blue
-      color: $accent-blue
-      text-decoration: underline
+    transition: all 0.5s
+    overflow: hidden
+    &:before
+      content: ""
+      position: absolute
+      left: -50px
+      width: calc(100% + 100px)
+      opacity: 0.8
+      z-index: -1
+      border-right: 50px solid transparent
+      border-bottom: 40px solid $main-black
+      transform: translateX(-100%)
+      transition: all 0.5s
+    &:hover
+      color: mix($main-black, $accent-blue)
+
+    &--active
+      color: $base-white
+      &:before
+        transform: translateX(0)
+      &:hover
+        color: mix($base-white, $accent-blue)
