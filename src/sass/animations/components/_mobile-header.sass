@@ -1,0 +1,114 @@
+@keyframes key__mobile-header__to-center
+  100%
+    top: 50%
+
+@keyframes key__mobile-header__to-top
+  100%
+    top: 0%
+
+@keyframes key__mobile-header__to-bottom
+  100%
+    top: 100%
+
+// 内部的にはeaseOutElasticの式を用いている
+@keyframes key__mobile-header__turn-bar
+  0%
+    transform: rotate(0.0deg)
+  16%
+    transform: rotate(55.42deg)
+  28%
+    transform: rotate(99.42deg)
+  44%
+    transform: rotate(123.52deg)
+  59%
+    transform: rotate(112.28deg)
+  73%
+    transform: rotate(92.47deg)
+  88%
+    transform: rotate(79.47deg)
+  100%
+    transform: rotate(90.0deg)
+
+@keyframes key__mobile-header__return-bar
+  0%
+    transform: rotate(90.0deg)
+  16%
+    transform: rotate(34.58deg)
+  28%
+    transform: rotate(-9.42deg)
+  44%
+    transform: rotate(-33.52deg)
+  59%
+    transform: rotate(-22.28deg)
+  73%
+    transform: rotate(-2.47deg)
+  88%
+    transform: rotate(10.53deg)
+  100%
+    transform: rotate(0.0deg)
+
+@keyframes key__mobile-header__turn-button
+  0%
+    transform: rotate(0.0deg)
+  16%
+    transform: rotate(83.14deg)
+  28%
+    transform: rotate(149.13deg)
+  44%
+    transform: rotate(185.28deg)
+  59%
+    transform: rotate(168.42deg)
+  73%
+    transform: rotate(138.71deg)
+  88%
+    transform: rotate(119.21deg)
+  100%
+    transform: rotate(135.0deg)
+
+@keyframes key__mobile-header__return-button
+  0%
+    transform: rotate(135.0deg)
+  16%
+    transform: rotate(51.86deg)
+  28%
+    transform: rotate(-14.13deg)
+  44%
+    transform: rotate(-50.28deg)
+  59%
+    transform: rotate(-33.42deg)
+  73%
+    transform: rotate(-3.71deg)
+  88%
+    transform: rotate(15.79deg)
+  100%
+    transform: rotate(0.0deg)
+
+.mobile-header
+  &__button
+    $easeInOutSine: cubic-bezier(0.37, 0, 0.63, 1)
+    &--enter
+      animation: key__mobile-header__turn-button 0.8s 0.2s linear both
+      .mobile-header__button-bar
+        &:nth-child(1)
+          animation: key__mobile-header__to-center 0.2s $easeInOutSine both
+        &:nth-child(3)
+          animation: key__mobile-header__to-center 0.2s $easeInOutSine both,
+          key__mobile-header__turn-bar 0.8s 0.2s linear both
+    &--enter-done
+      transform: rotate(135.0deg)
+      .mobile-header__button-bar
+        &:nth-child(1)
+          top: 50%
+        &:nth-child(3)
+          top: 50%
+          transform: rotate(90.0deg)
+    &--exit
+      animation: key__mobile-header__return-button 0.8s linear both
+      .mobile-header__button-bar
+        &:nth-child(1)
+          top: 50%
+          animation: key__mobile-header__to-top 0.2s 0.8s $easeInOutSine both
+        &:nth-child(3)
+          top: 50%
+          animation: key__mobile-header__return-bar 0.8s linear both,
+          key__mobile-header__to-bottom 0.2s 0.8s $easeInOutSine both

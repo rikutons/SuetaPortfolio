@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Header from '../components/header';
 import SlideShow from '../components/slide-show';
 import Contents from '../components/contents/contents';
+import Header from '../components/header';
 
 class Main extends Component {
     render() {

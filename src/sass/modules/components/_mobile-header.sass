@@ -1,0 +1,60 @@
+.mobile-header
+  &__wrapper
+    position: fixed
+    display: flex
+    width: 100%
+    z-index: 9999
+    background: linear-gradient(to bottom, #fffffe, transparent)
+    height: 100px
+  &__button
+    position: absolute
+    width: 40px
+    height: 30px
+    margin: 15px
+    top: 0px
+    right: 0px
+    // background-color: #f00 
+
+    $line-width: 4px
+    $line-radius: 2px
+    &-bar
+      position: absolute
+      width: 100%
+      height: $line-width
+      border-radius: $line-radius
+      background-color: $main-black
+      &:nth-child(1)
+        top: 0%
+      &:nth-child(2)
+        top: 50%
+      &:nth-child(3)
+        top: 100%
+
+  &__menu-wrapper
+    position: fixed
+    pointer-events: none
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0, 0, 0, 0.6)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    z-index: 9998
+    animation: fadein 0.5s 
+  &__text
+    position: relative
+    font-size: 35px
+    color: $main-black
+    pointer-events: auto
+    cursor: pointer
+    padding: 5px 5px 
+    margin: 5px 10px
+    font-family: buena-park-jf, serif
+  &__menu-content
+    position: relative
+    font-size: 35px
+    color: $base-white
+    pointer-events: auto
+    cursor: pointer
+    font-family: buena-park-jf, serif
