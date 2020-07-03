@@ -7,7 +7,6 @@ function Skills() {
         var skillTags = []
         skillGroup.skills.forEach((skill, index) => {
             var barWidth = (100 * skill.value / maxValue).toString() + '%'
-            console.log(barWidth)
             var barStyle = {width: barWidth}
             skillTags.push(
                 <div className="skills__skill" key={index}>
