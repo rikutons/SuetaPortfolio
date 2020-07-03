@@ -35,25 +35,25 @@ function PCHeader() {
     return (
         <div className="pc-header">
             <Controller globalSceneOptions={{ triggerHook: 0.2}}>
-                <Scene triggerElement="#slide-show" indicators={true}>
+                <Scene triggerElement="#slide-show">
                     {(progress, event) => {
                         changeActiveID(event.type, event.state, 0)
                         return <div/>
                     }}
                 </Scene>
-                <Scene triggerElement="#about" indicators={true}>
+                <Scene triggerElement="#about">
                     {(progress, event) => {
                         changeActiveID(event.type, event.state, 1)
                         return <div/>
                     }}
                 </Scene>
-                <Scene triggerElement="#works" indicators={true}>
+                <Scene triggerElement="#works">
                     {(progress, event) => {
                         changeActiveID(event.type, event.state, 2)
                         return <div/>
                     }}
                 </Scene>
-                <Scene triggerElement="#contact" indicators={true}>
+                <Scene triggerElement="#contact">
                     {(progress, event) => {
                         changeActiveID(event.type, event.state, 3)
                         return <div/>
