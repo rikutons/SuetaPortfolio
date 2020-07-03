@@ -10,6 +10,7 @@ function Contact() {
                     Mail
                 </button> 
             </a>
+            <div className="contact__section"/>
         </div>
     )
 }
