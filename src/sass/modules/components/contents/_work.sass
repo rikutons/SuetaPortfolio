@@ -20,7 +20,10 @@
     width: 60px
 
   &:nth-child(even)
-    transform-origin: 800px
+    @include md-layout
+      transform-origin: 500px
+    @include pc-layout
+      transform-origin: 800px
     .work__image
       margin-left: auto
     .work__discription-wrapper
