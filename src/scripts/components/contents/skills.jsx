@@ -20,9 +20,9 @@ function Skills() {
             )
         });
         skillGroupTags.push(
-            <div key={index}>
-                <div className="skills__tag">{skillGroup.tag}</div>
-                <div className="skills__skills-wrapper">
+            <div className="skills__skills-wrapper" key={index}>
+                <div className="skills__tag"><span className="skills__tag-text">{skillGroup.tag}</span></div>
+                <div>
                     {skillTags}
                 </div>
             </div>
@@ -31,7 +31,12 @@ function Skills() {
     return (
         <div>
             <h2>Skills</h2>
-            {skillGroupTags}
+            <p>
+                開発できる言語やライブラリ・ソフトウェアの表です。未経験をバーが空の状態とし、開発に使える機能の理解度に応じてバーの中身を増やしています。
+            </p>
+            <div className="skills__all-skills-wrapper">
+                {skillGroupTags}
+            </div>
         </div>
     )
 }

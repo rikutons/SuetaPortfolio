@@ -6,11 +6,15 @@
             "skills": [
                 {
                     "name": "React",
-                    "value": 10
+                    "value": 40
                 },
                 {
                     "name": "CSS",
-                    "value": 10
+                    "value": 80
+                },
+                {
+                    "name": "Sass(SASS記法)",
+                    "value": 50
                 }
             ]
         },
@@ -24,6 +28,48 @@
                 {
                     "name": "Dxlib",
                     "value": 30
+                }
+            ]
+        },
+        {
+            "tag": "言語",
+            "skills": [
+                {
+                    "name": "C/C++",
+                    "value": 80
+                },
+                {
+                    "name": "C#",
+                    "value": 40
+                },
+                {
+                    "name": "Ruby",
+                    "value": 60
+                },
+                {
+                    "name": "Python",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "tag": "ソフト",
+            "skills": [
+                {
+                    "name": "Adobe Photoshop",
+                    "value": 10
+                },
+                {
+                    "name": "Adobe Illustrator",
+                    "value": 20
+                },
+                {
+                    "name": "Adobe After Effects",
+                    "value": 25 
+                },
+                {
+                    "name": "Aviutl",
+                    "value": 60
                 }
             ]
         }
