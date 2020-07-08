@@ -5,7 +5,7 @@ import Contact from './contact'
 
 function Contents() {
     return (
-        <div className="contents">
+        <div className="contents" style={{top: window.innerHeight}}>
             <About/>
             <Works/>
             <Contact/>
