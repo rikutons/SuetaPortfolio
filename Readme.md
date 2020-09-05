@@ -1,7 +1,7 @@
-# Title
+# Sueta Portfolio
 1.どんなサイト？
 ---
-Sueta のポートフォリオサイトです。
+Webサイト作ったりゲーム開発したりしてる学生Suetaのポートフォリオサイトです。
 
 2.閲覧方法
 ---
@@ -15,3 +15,21 @@ git clone https://github.com/rikutons/SuetaPortfolio
 npm start
 ```
 とすると閲覧できます。
+
+3.利用技術・ソフトウェア
+---
+### ソフトウェア  
+・Adobe XD - ワイヤーフレームの作成  
+・Adobe Illustrator - メールアイコン等の作成  
+・VSCode - コーディング  
+
+### 技術
+・React  
+・Sass - Rubyに似た記法で記述できるSASS記法を採用しています。  
+・webpack  
+・さくらレンタルサーバー  
+・お名前.com  
+
+4.開発期間
+---
+一か月
