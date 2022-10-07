@@ -4,15 +4,15 @@ import React from "react";
 import ReactDOM from 'react-dom'
 import Main from './pages/main'
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 class App extends React.Component{
     render() {
         return (
             <Router>
-                <Switch>
-                    <Route path="/" exact component={Main} />
-                </Switch>
+                <Routes>
+                    <Route path="/" element={<Main/>} />
+                </Routes>
             </Router>
         )
     }
