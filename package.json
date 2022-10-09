@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Rikuto Sueta <rikutonsicloud@gmail.com>",
   "license": "MIT",
+  "homepage": "https://rikutons.github.io/SuetaPortfolio/",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",

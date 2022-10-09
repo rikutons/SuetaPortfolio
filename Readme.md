@@ -12,7 +12,7 @@ git clone https://github.com/rikutons/SuetaPortfolio
 ```
 したのち、リポジトリのディレクトリ内で
 ```
-npm start
+yarn start
 ```
 とすると閲覧できます。
 

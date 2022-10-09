@@ -1,5 +1,5 @@
 const path = require('path');
-const outputPath = path.resolve(__dirname, 'public');
+const outputPath = path.resolve(__dirname, 'docs');
 
 module.exports = {
   watchOptions: {

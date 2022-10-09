@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge') // webpack-merge
 const common = require('./webpack.common.js') // 汎用設定をインポート
 const path = require('path');
-const outputPath = path.resolve(__dirname, 'public');
+const outputPath = path.resolve(__dirname, 'docs');
 
 // common設定とマージする
 module.exports = merge(common, {

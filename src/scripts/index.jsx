@@ -9,11 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 class App extends React.Component{
     render() {
         return (
-            <Router>
-                <Routes>
-                    <Route path="/" element={<Main/>} />
-                </Routes>
-            </Router>
+             <Main/>
         )
     }
 }
