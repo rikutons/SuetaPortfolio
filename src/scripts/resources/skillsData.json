@@ -15,24 +15,36 @@
                 {
                     "name": "Sass(SASS記法)",
                     "value": 50
-                }
-            ]
-        },
-        {
-            "tag": "Game",
-            "skills": [
-                {
-                    "name": "Unity",
-                    "value": 50
                 },
                 {
-                    "name": "Dxlib",
-                    "value": 30
+                    "name": "JavaScript",
+                    "value": 70
                 }
             ]
         },
         {
-            "tag": "言語",
+            "tag": "Media",
+            "skills": [
+                {
+                    "name": "Adobe Photoshop",
+                    "value": 10
+                },
+                {
+                    "name": "Adobe Illustrator",
+                    "value": 30
+                },
+                {
+                    "name": "Adobe After Effects",
+                    "value":  50
+                },
+                {
+                    "name": "Aviutl",
+                    "value": 60
+                }
+            ]
+        },
+        {
+            "tag": "言語等",
             "skills": [
                 {
                     "name": "C/C++",
@@ -48,28 +60,28 @@
                 },
                 {
                     "name": "Python",
-                    "value": 20
+                    "value": 60
+                },
+                {
+                    "name": "Dxlib",
+                    "value": 30
+                },
+                {
+                    "name": "Unity",
+                    "value": 60
                 }
             ]
         },
         {
-            "tag": "ソフト",
+            "tag": "Sound",
             "skills": [
                 {
-                    "name": "Adobe Photoshop",
-                    "value": 10
+                    "name": "Reaper",
+                    "value": 70
                 },
                 {
-                    "name": "Adobe Illustrator",
-                    "value": 20
-                },
-                {
-                    "name": "Adobe After Effects",
-                    "value": 25 
-                },
-                {
-                    "name": "Aviutl",
-                    "value": 60
+                    "name": "AudaCity",
+                    "value": 50
                 }
             ]
         }

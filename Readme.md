@@ -1,11 +1,11 @@
 # Sueta Portfolio
 1.どんなサイト？
 ---
-Webサイト作ったりゲーム開発したりしてる学生Suetaのポートフォリオサイトです。
+Webサイト作ったりゲーム開発したりしてる学生のポートフォリオサイトです。
 
 2.閲覧方法
 ---
-https://sueta.jp にアクセスしてください。
+https://rikutons.github.io/SuetaPortfolio/ にアクセスしてください。
 ローカルで閲覧する場合は、
 ```
 git clone https://github.com/rikutons/SuetaPortfolio
