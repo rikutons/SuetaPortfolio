@@ -60,7 +60,7 @@
                 },
                 {
                     "name": "Python",
-                    "value": 60
+                    "value": 70
                 },
                 {
                     "name": "Dxlib",
@@ -69,6 +69,10 @@
                 {
                     "name": "Unity",
                     "value": 60
+                },
+                {
+                    "name": "lua",
+                    "value": 80
                 }
             ]
         },
